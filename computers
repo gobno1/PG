@@ -1,0 +1,77 @@
+DOMAIN: relia.com
+
+192.168.110.189 - MAIL - Windows
+WinRM
+SMB
+SMTP
+
+192.168.110.191 - LOGIN - Windows - dmzadmin::SlimGodhoodMope - proof.txt
+80 - basic auth login page
+RDP
+SMB
+
+192.168.110.245 - WEB01 - local.txt
+anita - id_ecdsa
+FTP - anonym login possible, but nothing on it
+SSH - 2222
+
+192.168.110.246 - DEMO - local.txt
+anita - id_ecdsa
+SSH - 2222
+
+192.168.110.247 - New Hire - WEB02 - proof.txt
+SMB
+RDP
+WinRM
+FileZilla - FTP - anonym login possible - TO DO
+
+192.168.110.248 - EXTERNAL - Windows
+HTTP - robots.txt
+SMB
+RDP
+WinRM
+MsSQL - 49965
+
+192.168.110.249 - LEGACY - WINDOWS - local&proof.txt
+SMB
+RDP
+IIS webserver & Apache XAMPP
+WinRM
+
+192.168.110.250 - WINPREP
+RDP:
+offsec:lab
+
+172.16.117.6 - DC02
+
+172.16.70.7 - INTRANET - Win - michelle -local
+RDP
+80
+SMB
+WinRM
+
+172.16.70.14 - WK01 - Win - relia/jim - local.txt
+SMB
+RDP
+5040 - unknow --> check it
+
+172.16.70.15 - WK02 - Win
+SMB
+RDP
+
+172.16.70.19 - Ubuntu
+SSH
+
+172.16.70.20 - FreeBSD
+SSH
+33060 --> socks5 --> check it
+
+172.16.70.21 - FILES - Win
+WinRM
+SMB
+
+172.16.70.30 - WEBBY - Win
+80
+SMB
+RDP
+MongoDB
